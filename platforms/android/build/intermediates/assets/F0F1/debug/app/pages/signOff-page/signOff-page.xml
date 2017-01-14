@@ -1,0 +1,52 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd"
+    navigatingTo="pageNavigatingTo" 
+    actionBarHidden="true">
+     <GridLayout rows="auto, auto, *" swipe="backTap" class="page-content">
+        <!--Header-->
+       <GridLayout columns="auto, *" rows="auto, auto" cssClass="pageHeader">
+       
+            <GridLayout horizontalAlignment="left">
+                <GridLayout columns="auto" horizontalAlignment="left" tap="backTap" cssClass="segmented-middle">
+                    <Label text="&#xf060;" class="icon-cog"/>
+                </GridLayout>
+                <GridLayout horizontalAlignment="left" verticalAlignment="center" cssClass="title-margin">
+                        <!--Header LAbel-->
+
+                </GridLayout>      
+            </GridLayout>
+
+            <GridLayout horizontalAlignment="right" columns="auto, *,*,*" col="1" cssClass="segmented-middle">
+               <!--<Label text="&#xf08a;" col="0" class="icon-cog icon-wrap"/>
+               <Label text="&#xf044;" col="1" class="icon-cog icon-wrap"/>
+               <Label text="&#xf1f8;" col="2" class="icon-cog icon-wrap"/>
+               <Label text="&#xf142;" col="3" class="icon-cog icon-wrap"/>-->
+            </GridLayout>
+        </GridLayout>
+        <!--CONTENT-->
+        <GridLayout rows="auto, auto, auto, auto, *" row="1">
+                <GridLayout row="0" columns="auto, *">
+                    <Label text="To" col="0"/>
+                    <TextField col="1" id="SignOff"/>
+                </GridLayout>
+                <GridLayout columns="auto, *" row="1">
+                    <Label text="Recommend" col="0"/>
+                    <TextField col="1" id="Recommend" />
+                </GridLayout>
+                <GridLayout columns="auto, *" row="2">
+                    <Label text="Comments" col="0"/>
+                    <TextField col="1" id="Comments"/>
+                </GridLayout>
+                <Button row="3" text="Sign Off" tap="signOff"/>
+                <StackLayout row="4">
+                    <Label text="{{test}}"/>
+                    <Label text="{{Recommend}}"/>
+                    <Label text="{{Comments}}"/>
+                    
+                    <Label text="{{Cost}}"/>
+                    <Label text="{{Name}}"/>
+                </StackLayout>
+        </GridLayout>
+
+
+    </GridLayout>
+</Page>

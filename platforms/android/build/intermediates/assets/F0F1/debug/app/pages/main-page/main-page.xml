@@ -1,0 +1,95 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd"
+    xmlns:drawer="nativescript-telerik-ui/sidedrawer"
+    xmlns:PullRefresh="nativescript-pulltorefresh"
+    loaded="pageLoaded" 
+    actionBarHidden="true">
+    
+
+    <!--SIDE DRAWER-->
+    <drawer:RadSideDrawer id="SideDrawer" class="page-content">
+        <drawer:RadSideDrawer.drawerTransition>
+          <drawer:SlideInOnTopTransition/>
+        </drawer:RadSideDrawer.drawerTransition>  
+        <drawer:RadSideDrawer.drawerContent>
+            <GridLayout rows="*, auto">
+                <StackLayout style="background-color: #053140;">
+                    <Button text="Coffee" />
+                    <Button text="All sessions"/>
+                </StackLayout>
+            </GridLayout>
+        </drawer:RadSideDrawer.drawerContent>
+        <drawer:RadSideDrawer.mainContent>
+        <!--Header-->
+        <GridLayout rows="auto, *" class="page-content">
+            <GridLayout columns="auto, *" cssClass="pageHeader">
+
+                <GridLayout horizontalAlignment="left" col="0">
+                    <GridLayout columns="auto" horizontalAlignment="left" tap="showSlideout" cssClass="segmented-middle">
+                        <Label text="&#xf0c9;" class="icon-cog"/>
+                    </GridLayout>
+                    <GridLayout horizontalAlignment="left" verticalAlignment="center" cssClass="title-margin">
+                            
+                    </GridLayout>
+                    
+                </GridLayout>
+                <GridLayout horizontalAlignment="right" col="1" columns="auto, *, *">
+                    <GridLayout horizontalAlignment="right" col="0" cssClass="segmented-middle">
+                        <Label text="&#xf002;" col="0" class="icon-cog"/>
+                    </GridLayout>
+                    <GridLayout horizontalAlignment="right" tap="runCoffee" col="1" cssClass="segmented-middle">
+                        <Label text="&#xf206;" col="0" class="icon-cog"/>
+                    </GridLayout>
+                    <GridLayout horizontalAlignment="right" col="2" tap="gotoWorkflowPage" cssClass="segmented-middle">
+                        <Label text="&#xf013;" col="1" class="icon-cog"/>
+                    </GridLayout>
+                </GridLayout>
+           <!--<GridLayout>
+                <SegmentedBar cssClass="segmented-bar" items="{{ beverageOptions}}" selectedIndex="{{selectedIndex}}"/>
+           </GridLayout>-->
+
+        </GridLayout>
+        <!--Coffee ListView-->
+        
+        <GridLayout rows="*" row="1">
+        <PullRefresh:PullToRefresh refresh="refreshList">
+            <ListView items="{{ coffees }}" id="coffeeSelection" itemTap="selectCoffee" row="0">
+                <ListView.itemTemplate>
+                    <GridLayout columns="auto, *, auto" cssClass="list-view-row">
+                        <GridLayout cssClass="image-wrap" col="0">
+                            <Image src="res://icon" stretch="none" cssClass="icon-image"/>
+                        </GridLayout>
+                        <StackLayout col="1">
+                            <Label  text="{{ Name }}" cssClass="info-bigger bold"/>
+                            <Label  text="{{ Notes }}" cssClass="info-medium" />
+                            <GridLayout columns="auto, *">
+                                <Label text="{{ coffeeRoast}}" col="0" cssClass="info-small" />
+                                <!--<Label text="{{ Elevation }}" col="1" cssClass="info-small" />-->
+                            </GridLayout>
+                            
+                        </StackLayout>
+                        <!--<GridLayout col="2" columns="auto, *">
+                            <Label text="{{Region}}" col="0" cssClass="region-info"/>
+                            <Label text="{{ Cost }}" col="1"/>
+                        </GridLayout>-->
+                        <GridLayout horizontalAlignment="right" col="2" tap="overflowMenu" cssClass="imageOverflow-wrap" columns="auto">
+                            <Label text="&#xf004;" col="1" class="icon-cog-black"/>
+                        </GridLayout>
+                        
+                        <!--<GridLayout horizontalAlignment="right" tap="gotoWorkflowPage" cssClass="action-wrap">
+                            <Image stretch="none" cssClass="icon-image" src="res://icon"/>
+                        </GridLayout>-->
+                    </GridLayout>    
+                </ListView.itemTemplate>
+            </ListView>
+             </PullRefresh:PullToRefresh>  
+          <ActivityIndicator busy="{{ isLoading }}" horizontalAlignment="center" verticalAlignment="center" />
+        </GridLayout>
+        <AbsoluteLayout row="1">
+            <Image left="310" top="480" stretch="none" tap="gotoAddCoffee" cssClass="icon-image" src="res://fab_add"/>
+        </AbsoluteLayout>
+    </GridLayout>
+    
+        </drawer:RadSideDrawer.mainContent>
+      </drawer:RadSideDrawer>
+ 
+</Page>

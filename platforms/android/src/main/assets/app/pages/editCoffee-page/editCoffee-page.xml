@@ -1,0 +1,47 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd"
+  navigatingTo="pageNavigatingTo" 
+  xmlns:dd="nativescript-drop-down"
+  actionBarHidden="true">
+<!--Header-->
+<GridLayout rows="auto, *" swipe="backTap" class="page-content">
+   <GridLayout columns="auto, *" rows="auto, auto" cssClass="pageHeader">
+       
+            <GridLayout horizontalAlignment="left">
+                <GridLayout columns="auto, *" horizontalAlignment="left" tap="backTap" cssClass="segmented-middle">
+                    <Label text="&#xf060;" col="0" class="icon-cog"/>
+                    <Label text="Edit Coffee" col="1" cssClass="page-title bold" />
+                </GridLayout>
+                <GridLayout horizontalAlignment="left" verticalAlignment="center" cssClass="title-margin">
+                        
+                </GridLayout>      
+            </GridLayout>
+
+            <GridLayout horizontalAlignment="right" columns="*" col="1" cssClass="segmented-middle">
+               <Label text="&#xf083;" col="0" tap="coffeeCamera" class="icon-cog icon-wrap"/>
+            </GridLayout>
+        </GridLayout>
+    <GridLayout rows="auto, *" row="1">
+    <ScrollView row="1">
+        <StackLayout>  
+            <GridLayout horizontalAlignment="right">
+                <dd:DropDown items="{{ coffeeSelection }}" cssClass="drop-down" selectedIndex="{{ selectedIndex }}" colspan="3"/>
+            </GridLayout>
+          
+            <TextField hint="Coffee Name" text="{{Name}}" id="name"/>
+            <TextField hint="Cost" text="{{Cost}}" id="cost" keyboardType="number" />
+            <TextField hint="Notes" text="{{Notes}}" id="notes" />
+            <TextField hint="Region" text="{{Region}}" id="region"/>
+            <TextField hint="Acidity" text="{{Acidity}}" id="acidity"/>
+            <TextField hint="Body" text="{{Body}}" id="body"/>
+            <TextField hint="Elevation" text="{{Elevation}}" id="elevation"/>
+            <TextField hint="Processing" text="{{Processing}}" id="processing"/>
+            <TextField hint="Varietal" text="{{Varietal}}" id="varietal"/>
+            <TextField hint="Decaf" text="{{Decaf}}" />
+            <Button text="Sign Off" tap="signOffPage"/>
+            <Button text="Save" tap="addCoffee"/>
+        </StackLayout>
+        </ScrollView>
+    </GridLayout>
+
+</GridLayout>
+</Page>

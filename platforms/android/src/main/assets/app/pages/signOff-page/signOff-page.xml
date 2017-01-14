@@ -1,0 +1,45 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd"
+    navigatingTo="pageNavigatingTo" 
+    actionBarHidden="true">
+     <GridLayout rows="auto, auto, *" swipe="backTap" class="sopage-content">
+        <!--Header-->
+       <GridLayout columns="auto, *" rows="auto, auto" cssClass="pageHeader">
+       
+            <GridLayout horizontalAlignment="left">
+                <GridLayout columns="auto" horizontalAlignment="left" tap="backTap" cssClass="segmented-middle">
+                    <Label text="&#xf060;" class="icon-cog"/>
+                </GridLayout>
+                <GridLayout horizontalAlignment="left" verticalAlignment="center" cssClass="title-margin">
+                        <!--Header LAbel-->
+                        <Label text="{{ Name }}" cssClass="page-title bold" />
+                </GridLayout>      
+            </GridLayout>
+
+            <GridLayout horizontalAlignment="right" columns="auto, *,*,*" col="1" cssClass="segmented-middle">
+               
+            </GridLayout>
+        </GridLayout>
+        <!--CONTENT-->
+        <ScrollView row="2">
+        <StackLayout rows="auto, auto, auto, auto, auto, auto" cssClass="content">
+                <GridLayout row="0"  cssClass="sowrap">
+                    <Label text="{{SignOff ? 'Tasted Coffee!!' : 'Try Coffee'}}" col="0" horizontalAlignment="center" cssClass="soinfo-header"/>
+                    <Switch checked="{{SignOff}}" cssClass="switch" horizontalAlignment="right" col="1"/>
+                </GridLayout>
+                <GridLayout cssClass="sowrap" row="1">
+                    <Label text="{{Recommend ? 'Recommend' : 'Not Recommend'}}" col="0" horizontalAlignment="center" cssClass="soinfo-header"/>
+                    <Switch checked="{{Recommend}}" cssClass="switch" horizontalAlignment="right" col="1"/>
+                </GridLayout>
+                <GridLayout cssClass="sowrap" rows="auto, *" row="2">
+                    <Label text="Comments" horizontalAlignment="center" cssClass="soinfo-header"/>
+                    <TextField row="1" text="{{Comments}}" cssClass="soingo-content" id="Comments"/>
+                </GridLayout>
+                <Button row="3" text="Sign Off" tap="signOff"/>
+                <StackLayout row="4">
+                  
+                </StackLayout>
+        </StackLayout>
+        </ScrollView>
+
+    </GridLayout>
+</Page>

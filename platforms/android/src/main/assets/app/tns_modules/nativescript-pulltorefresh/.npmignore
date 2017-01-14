@@ -1,0 +1,9 @@
+﻿# generated files
+.vs
+.vs/
+.sln
+*.sln
+demo/
+screens/
+*.png
+*.log

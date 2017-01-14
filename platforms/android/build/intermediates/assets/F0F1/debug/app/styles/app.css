@@ -1,0 +1,180 @@
+
+.pageHeader{
+    background-color: mediumblue;
+    background-size: cover;
+    font-family: 'FontAwesome';
+}
+
+.content-header{
+    background-color: #555555;
+    background-size: cover;
+}
+
+.page-title-small {
+    font-size: 14;
+    color: White;
+    margin-left: 15;
+    margin-right: 15;
+    margin-bottom: 1;
+    margin-top: 25;
+    
+}
+
+.page-title {
+    color: white;
+    font-size: 20;
+    vertical-align: center;
+    margin-left: 15;
+}
+
+
+.bold {
+    font-weight: bold;
+}
+
+.icon-image {
+    vertical-align: center;
+
+}
+
+.cpicon-image {
+    padding-top: 5;
+    padding-right: 10;
+    padding-bottom: 10;
+    padding-left: 10;
+}
+.segmented-bar {
+    background-color: mediumblue;
+    color: White;
+}
+
+.page-content {
+    background-color: white;
+    font-family: 'FontAwesome';
+}
+
+.info-bigger {
+    color: #555555;
+    font-size: 17;
+    margin: 0;
+    padding-bottom: 5;
+}
+.cpinfo-bigger {
+    color: #555555;
+    font-size: 30;
+    margin: 0;
+    padding-bottom: 5;
+}
+.cpinfo-header {
+    color: black;
+    font-size: 30;
+    margin: 0;
+    font-weight: bold;
+    padding-bottom: 5;
+}
+
+.cpinfo-medium {
+    color: #555555;
+    font-size: 12;
+    padding-top: 5;
+    padding-bottom: 10;
+}
+
+.cpbutton-info {
+    color: mediumblue;
+    font-size: 12;
+    padding-top: 5;
+    font-weight: bold;
+    padding-left: 10;
+}
+
+.list-view-row {
+    padding: 20;
+}
+
+.drop-down {
+    padding: 10;
+    margin: 12;
+}
+.content {
+    margin: 12;
+}
+.info-small {
+    font-size: 12;
+    color: #555555;
+    padding-top: 5;
+}
+
+.cpinfo-small{
+    font-size: 14;
+    color: black;
+    padding-top: 5;
+}
+
+.icon-cog{
+    color: white;
+    font-size: 25em; 
+}
+
+.icon-cog-black{
+    font-size: 25em; 
+}
+
+.region-info {
+    font-size: 12;
+    color: black;
+    margin-right: 18;
+}
+SegmentedBar {
+    background-color: transparent;
+    color: White;
+    margin: 12 12;
+}
+
+.title-margin {
+    margin-left: 50;
+}
+
+.action-wrap {
+    vertical-align: center;
+    padding-left: 20;
+    padding-right: 10;
+    padding-top: 10;
+ 
+
+}
+
+.segmented-middle {
+    vertical-align: center;
+    padding-left: 20;
+    padding-right: 10;
+    padding-top: 20;
+    padding-bottom: 20;
+}
+.horizontal-line {
+    height: 1;
+    background-color: #555555;
+    vertical-align:center;
+    margin: 0 0 8 0;
+}
+.image-wrap {
+    vertical-align: center;
+    padding-left: 5;
+    padding-right: 20;
+}
+.icon-wrap {
+    vertical-align: center;
+    padding-left: 35;
+   
+}
+.cpicon-wrap {
+    vertical-align: center;
+    padding: 10 10 10 10;
+}
+.imageOverflow-wrap {
+    vertical-align: center;
+    padding: 10;
+}
+.page-content {
+    background-color: white;
+}

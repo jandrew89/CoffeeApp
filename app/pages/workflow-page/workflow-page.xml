@@ -1,0 +1,29 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd"
+  navigatingTo="pageNavigatingTo" actionBarHidden="true">
+<!--Header-->
+<GridLayout rows="auto, *">
+    <StackLayout cssClass="pageHeader">
+    </StackLayout>
+
+    
+    <GridLayout rows="auto, *" row="1">
+        <ListView items="{{ workflows }}" row="1">
+                <ListView.itemTemplate>
+                    <GridLayout columns="auto, *" cssClass="list-view-row">
+                        <StackLayout col="1">
+                            <Label  text="{{ Id }}" cssClass="info-bigger"/>
+                            <Label  text="{{ BP }}" cssClass="info-medium" textWrap="true"/>
+                            <Label text="{{ Description }}" cssClass="info-small" />
+                        </StackLayout>
+                        <GridLayout horizontalAlignment="right" col="1" columns="auto, *">
+                            <Label text="{{Priority}}" col="0" cssClass="region-info"/>
+                            <Label text="{{ RequestedBy }}" col="1"/>
+                        </GridLayout>
+                    </GridLayout>    
+                </ListView.itemTemplate>
+            </ListView>
+    </GridLayout>
+
+</GridLayout>
+
+</Page>

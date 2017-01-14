@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\Program Files\Android\android-sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="D:\Projects\VSCode\NativeScript\coffeeapp\coffeeapp\platforms\android\build\intermediates\pre-dexed\F0F1\debug\support-annotations-23.4.0_36fbddb1d3451aea54109d1ba86133839c6d2736.jar" />
+    </item>
+    <item
+        jar="D:\Projects\VSCode\NativeScript\coffeeapp\coffeeapp\platforms\android\libs\nativescript.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="57b3fa4e07f606555cab1d8373106c80acd79f64">
+        <dex dex="D:\Projects\VSCode\NativeScript\coffeeapp\coffeeapp\platforms\android\build\intermediates\pre-dexed\F0F1\debug\nativescript_14b638d916effeba3e7d657d7db6bf22ca0dee39.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,93 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd"
+  navigatingTo="pageNavigatingTo" 
+  xmlns:dd="nativescript-drop-down"
+  actionBarHidden="true"
+  backgroundSpanUnderStatusBar="true">
+    <GridLayout rows="auto, auto, *" swipe="backTap" class="page-content">
+        <!--Header-->
+       <GridLayout columns="auto, *" rows="auto, auto" cssClass="pageHeader">
+       
+            <GridLayout horizontalAlignment="left">
+                <GridLayout columns="auto" horizontalAlignment="left" tap="backTap" cssClass="segmented-middle">
+                    <Label text="&#xf060;" class="icon-cog"/>
+                </GridLayout>
+                <GridLayout horizontalAlignment="left" verticalAlignment="center" cssClass="title-margin">
+                        
+                </GridLayout>      
+            </GridLayout>
+
+            <GridLayout horizontalAlignment="right" columns="auto, *,*,*" col="1" cssClass="segmented-middle">
+               <Label text="&#xf08a;" col="0" tap="signOffPage" class="icon-cog icon-wrap"/>
+               <Label text="&#xf044;" col="1" tap="editCoffee"  class="icon-cog icon-wrap"/>
+               <Label text="&#xf1f8;" col="2" class="icon-cog icon-wrap"/>
+               <Label text="&#xf142;" col="3" class="icon-cog icon-wrap"/>
+            </GridLayout>
+        </GridLayout>
+        <GridLayout row="1" class="content-header segmented-middle">
+            <Label text="{{ Name }}" cssClass="page-title bold" />
+           <!--<SegmentedBar cssClass="segmented-bar" />-->
+        </GridLayout>
+
+        <!--Content-->
+        <ScrollView row="2">
+            <GridLayout rows="auto, *"> 
+                    <GridLayout columns="auto, *" row="0" rows="auto, *" cssClass="content">
+                            <GridLayout col="1" row="0" columns="auto,auto, *" cssClass=".cpicon-wrap">
+                                <GridLayout col="0" cssClass="cpicon-image">
+                                    <Image src="res://icon" stretch="none" cssClass="icon-image"/>
+                                </GridLayout>
+                                <GridLayout col="1">
+                                    <StackLayout>
+                                        <Label text="{{ Name }}" cssClass="cpinfo-small" textWrap="true"/>
+                                        <Label text="User" cssClass="cpinfo-small" textWrap="true"/>
+                                        <GridLayout columns="auto, auto" rows="auto, *">
+                                            <Label text="Date" cssClass="cpinfo-medium " row="0" col="0" />
+                                            <Label text="DETAILS" cssClass="cpbutton-info" row="0" col="1"/>
+                                        </GridLayout>
+                                    </StackLayout>
+                                </GridLayout>
+                                <GridLayout horizontalAlignment="right" columns="auto, *" col="2">
+                                    <Label text="Sign Off" cssClass="info-small" col="0"/>
+                                    <Image src="res://ic_checkmark" col="1" stretch="none" cssClass="icon-image"/>
+                                </GridLayout>
+                                
+                            </GridLayout>
+                            <StackLayout cssClass="horizontal-line" row="1" col="1" margin="0 0 0 0"/>
+                    </GridLayout>    
+                    <GridLayout row="1" cssClass="content">
+                        <StackLayout>
+                            <GridLayout row="2" rows="auto, *" cssClass="list-view-row">
+                                <Label row="0" text="COMMENTS: " cssClass="cpinfo-header"/>
+                                <Label row="1" text="{{test}}" cssClass="cpinfo-bigger" textWrap="true"/>
+                            </GridLayout>
+                       	    <GridLayout row="2" rows="auto, *" cssClass="list-view-row">
+                                <Label row="0" text="COST: " cssClass="cpinfo-header"/>
+                                <Label row="1" text="{{Cost}}" cssClass="cpinfo-bigger" textWrap="true"/>
+                            </GridLayout>
+                            <StackLayout cssClass="horizontal-line" row="1" col="1" margin="0 0 0 0"/>
+                            <GridLayout row="0" rows="auto, *" cssClass="list-view-row">
+                                <Label row="0" text="REGION: " cssClass="cpinfo-header"/>
+                                <Label row="1" text="{{Region}}" cssClass="cpinfo-bigger"/>
+                            </GridLayout>
+                            <StackLayout cssClass="horizontal-line" row="1" col="1" margin="0 0 0 0"/>
+                            <GridLayout row="1" rows="auto, *" cssClass="list-view-row">
+                                <Label row="0" text="NOTES: " cssClass="cpinfo-header"/>
+                                <Label row="1" text="{{Notes}}" cssClass="cpinfo-bigger" textWrap="true"/>
+                            </GridLayout>
+                             <StackLayout cssClass="horizontal-line" row="1" col="1" margin="0 0 0 0"/>
+                            <GridLayout row="2" rows="auto, *" cssClass="list-view-row">
+                                <Label row="0" text="ELEVATION: " cssClass="cpinfo-header"/>
+                                <Label row="1" text="{{Elevation}}" cssClass="cpinfo-bigger" textWrap="true"/>
+                            </GridLayout>
+                             <StackLayout cssClass="horizontal-line" row="1" col="1" margin="0 0 0 0"/>
+                            <!--<Label  text="{{ Notes }}" row="0" cssClass="cpinfo-bigger" textWrap="true"/>
+                            <Label text="{{ Elevation }}" row="1" cssClass="cpinfo-bigger" />
+                            
+                            <Label text="{{ Cost }}" row="3"/>-->
+                        </StackLayout>
+                    </GridLayout>
+                
+            </GridLayout>
+        </ScrollView>
+    </GridLayout>
+</Page>

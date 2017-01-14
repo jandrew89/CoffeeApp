@@ -1,0 +1,87 @@
+{
+  "name": "nativescript-pulltorefresh",
+  "version": "1.1.5",
+  "description": "A NativeScript plugin to provide the Pull to Refresh control on any view.",
+  "main": "pulltorefresh.js",
+  "nativescript": {
+    "platforms": {
+      "android": "1.6.0",
+      "ios": "1.6.0"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bradmartin/nativescript-pulltorefresh.git"
+  },
+  "keywords": [
+    "NativeScript",
+    "native",
+    "script",
+    "Pull Refresh",
+    "SwipeRefreshLayout",
+    "Material Design",
+    "UIRefreshControl",
+    "android",
+    "ios",
+    "bradmartin",
+    "Thorum"
+  ],
+  "contributors": [
+    {
+      "name": "Nathanael Anderson",
+      "email": "nathan@master-technology",
+      "url": "https://github.com/nathanaela"
+    },
+    {
+      "name": "Peter Staev",
+      "email": "peter@tangrasoft.com",
+      "url": "https://github.com/PeterStaev"
+    }
+  ],
+  "author": {
+    "name": "Brad Martin",
+    "email": "bradwaynemartin@gmail.com",
+    "url": "https://github.com/bradmartin"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/bradmartin/nativescript-pulltorefresh/issues"
+  },
+  "homepage": "https://github.com/bradmartin/nativescript-pulltorefresh",
+  "gitHead": "fee1d0fca9b53101f45c3d2df3acf2a2198921a5",
+  "_id": "nativescript-pulltorefresh@1.1.5",
+  "scripts": {},
+  "_shasum": "2d3009bc5c2ad0821afe2d52f8975b5b6cde8b8a",
+  "_from": "nativescript-pulltorefresh@>=1.1.5 <2.0.0",
+  "_npmVersion": "3.10.5",
+  "_nodeVersion": "6.3.0",
+  "_npmUser": {
+    "name": "bradmartin",
+    "email": "bradmartin0905@gmail.com"
+  },
+  "dist": {
+    "shasum": "2d3009bc5c2ad0821afe2d52f8975b5b6cde8b8a",
+    "tarball": "https://registry.npmjs.org/nativescript-pulltorefresh/-/nativescript-pulltorefresh-1.1.5.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "bradmartin",
+      "email": "bradmartin0905@gmail.com"
+    },
+    {
+      "name": "nathanaela",
+      "email": "nathan@master-technology.com"
+    },
+    {
+      "name": "pstaev",
+      "email": "peter.staev@gmail.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/nativescript-pulltorefresh-1.1.5.tgz_1469071034749_0.5809913636185229"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/nativescript-pulltorefresh/-/nativescript-pulltorefresh-1.1.5.tgz",
+  "readme": "ERROR: No README data found!"
+}
